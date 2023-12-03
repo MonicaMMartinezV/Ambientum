@@ -1,0 +1,26 @@
+*{
+    margin: auto;
+    background: #fff;
+}
+.texto{
+    padding: 30px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: aquamarine;
+}
+.despliega{
+    background-color: rgb(69, 69, 90);
+}
+.texto:hover{
+    background-color: blueviolet;
+}
+.texto2{
+    padding: 30px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+.texto2:hover{
+    background-color: red;
+}

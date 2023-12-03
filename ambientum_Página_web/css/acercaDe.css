@@ -1,0 +1,43 @@
+.hero__title {
+    font-size: 3rem;
+    color:#fff;
+}
+.hero__container_a{
+    background-color: #b8aed0;
+    width: 100%;
+    min-width: 500px;
+    --padding-container: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-top:50px;
+    padding-bottom: 40px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+.container1{
+    position: relative;
+    padding: 6%;
+    min-width: 350px;
+    max-width: 800px;
+    margin: auto;
+    height: 75%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "box1 box2";
+    grid-gap: 10%;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.card_container_a{
+    width: 90%;
+    --opacidad-negro: 0.1;
+    background: linear-gradient(rgba(0, 20, 20, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro)));
+}

@@ -1,0 +1,161 @@
+:root{
+    --dark-mode:rgb(0,0,0);
+    --light-mode:rgb(255, 255, 255);
+    --fill-color-1:rgb(0, 0, 0);
+    --fill-color-2:rgb(255, 255, 255);
+  }
+
+*{
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    color: #000;
+    background: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 57%;
+    margin-left: 43%;
+}
+
+header nav{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;/*20px arriba y automatico de los lados*/
+    background: #024059;
+}
+
+header nav ul{
+    overflow: hidden; 
+}
+
+header nav ul li{
+    float: left;
+    list-style: none;
+}
+
+header nav ul li a{
+    color: #fff;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+header ul li span{
+    margin-right: 10px;
+}
+
+header nav ul li a:hover{
+    background: rgb(4, 23, 78);
+}
+
+.logo{
+    display: block;
+}
+.logo > img{
+    padding: 0;
+    width: 100%;
+    opacity: 0.85;
+}
+
+.selected{
+    background: rgb(4, 23, 78);
+}
+
+.menu_bar{
+    display: none;
+}
+
+.content{
+    padding: 15px;
+    height: 100vh;
+    width: 100%;
+}
+
+.card{
+    width: 90%;/*el width no cuenta el margin*/
+    background: rgba(45, 45, 56, 0.286);
+    border: #eeeeee43 1px solid;
+    border-radius: 2mm;
+    margin: 40px auto;
+    min-width: 250px;
+    max-width: 547px;
+}
+.card > div{
+    display: block;
+    color:#000;
+}
+.text{
+    align-items:flex-end;
+}
+.text > p{
+    height: 80%;
+    text-align: center;
+    padding: 18% 20px 0% 40px;   
+}
+
+.p1{
+    text-align: center;
+    font-size: 40px;
+    padding: 10px 20px;   
+}
+/*img necio*/
+.portada{
+    padding: 40px 10%;
+    width: 80%;
+}
+
+
+@media screen and (max-width:800px){
+    header nav{
+        width: 80%;
+        height: 100%;
+        left:-100%;
+        margin: 0;
+        top: 65px;
+        position: fixed;
+    }
+    
+    header nav ul li{
+        display: block;/*con un display block, el elemento abarco todo lo que pueda de ancho*/
+        float: none;/*NO modificar!!*/
+        border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+
+    .menu_bar{
+        display: block;
+        width: 100%;
+        background: #024959;
+        position: fixed;
+    }
+    
+    .menu_bar .bt-menu{
+        width: 15%;
+        display: block;
+        padding: 20px;
+        float: right;
+        align-content: center;/*revisar por que no se centra*/
+        background: rgba(0, 0, 0, 0);
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .sticky{
+        background: rgba(0, 0, 0, 0);
+    }
+
+    .menu_bar i{
+        float: right;
+    }
+
+}
+
+

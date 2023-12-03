@@ -1,0 +1,57 @@
+/*.content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "box1 box1"
+    "box1 box1"
+    "card card";
+    grid-gap: 15px;
+}*/
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(1,auto);
+}
+.hero__contacto{
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "logo logo smedia smedia"
+    "patrocinios patrocinios patrocinios patrocinios"
+    "direccion direccion direccion direccion";
+    grid-gap: 15px;
+}
+@media screen and (max-width:539px){/*de 0px a 539px*/
+    .card{
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(2,auto);
+    }   
+    .text > p{
+        padding: 40px;   
+    }
+    
+    /*img necio*/
+    .portada{
+        padding: 20px 10% 20px;
+        width: 80%;
+    }
+
+    .logo>img{
+        padding:20px 0px;
+        margin-top: 35px;
+    }
+    
+}    
+
+@media screen and (max-width:1200px){
+    .content{
+        display: block;
+    }    
+    .logo>img{
+        padding:20px 0px;
+        margin-top: 35px;
+    }
+}
+
